@@ -1,0 +1,4 @@
+main: org.hinoob.twitchdisplay.TwitchDisplay
+version: 1.0.0
+name: TwitchDisplay
+author: hinoob#8910

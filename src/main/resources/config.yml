@@ -1,0 +1,34 @@
+settings:
+  update-tick: 100 # check who's live every 100 ticks (20 ticks = 1 second)
+  tracked-streamers:
+    # you can add as many streamers as you want, if there's multiple lives, the streamer with the highest priority will be displayed
+    streamer1: 50
+    streamer2: 100
+  twitch:
+    # your api settings (get them from https://dev.twitch.tv)
+    client-id: 'XXX'
+    client-secret: 'XXX'
+  join-message:
+    # this will be displayed when player joins the server
+    - 'Hey! %username% is currently streaming right now!'
+    - 'Hop on: %link%'
+  repeat-message:
+    interval: 600 # every 30 seconds
+    sound: UI_BUTTON_CLICK
+    message:
+      - 'Hey! %username% is currently streaming right now!'
+      - 'Hop on: %link%'
+  bossbar:
+    interval: 50 # when should a bossbar animation happen
+    online:
+      color: GREEN
+      progress: 0
+      animation:
+        - '%link%'
+        - 'UH'
+        - '%link%'
+    offline:
+      color: RED
+      progress: 0
+      animation:
+          - '&cNo streamers are live!'
